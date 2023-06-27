@@ -7,6 +7,7 @@ This is a mobile app built with React Native that provides a fun and interactive
 1. Interactive user interface designed for kids
 2. Learning modules covering some subjects such as math, and language
 3. Sound effects for buttons and images and other interactive elements to enhance the user experience
+4. Horizontal scroll for the word(images with word) page.
 
 ## Installation
 To install the app, follow these steps:
