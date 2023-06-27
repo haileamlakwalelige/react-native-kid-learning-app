@@ -1,0 +1,659 @@
+import * as React from 'react';
+import { Text, View, StyleSheet,TouchableOpacity,ImageBackground } from 'react-native';
+// import Words from './Words';
+import {Audio} from 'expo-av'
+
+const  playSoundA = async () => {
+     await Audio.Sound.createAsync(
+       require('./assets/HaHabtam.wav'),
+       {shouldPlay:true}
+     )
+  }
+  const  playSoundB = async () => {
+     await Audio.Sound.createAsync(
+       require('./assets/Lelelit.wav'),
+       {shouldPlay:true}
+     )
+  }
+  const  playSoundC = async () => {
+     await Audio.Sound.createAsync(
+       require('./assets/Huhamer.wav'),
+       {shouldPlay:true}
+     )
+  }
+  const  playSoundD = async () => {
+     await Audio.Sound.createAsync(
+       require('./assets/Mmeskel.wav'),
+       {shouldPlay:true}
+     )
+  }
+
+const kid=require('./assets/brana.jfif')
+export default function Alphabets({navigation}) {
+  return (
+    <View  style={styles.container} >
+    <ImageBackground source={kid} >
+     <Text style={{fontWeight:'bold',paddingLeft: 50,fontSize:40,color:'brown'}}> አማርኛ ፊደላት</Text>
+    <View style={{ paddingTop: 30,}}>
+  <View style={{flexDirection:'row'}}>
+  <TouchableOpacity  style={styles.buttonA} 
+    onPress={playSoundA}>
+  <Text style={styles.texty}>ሀ</Text>
+  </TouchableOpacity>
+  <TouchableOpacity    style={styles.buttonB}  >
+  <Text style={styles.texty}>ሁ</Text>
+  </TouchableOpacity>
+  <TouchableOpacity    style={styles.buttonC} >
+  <Text style={styles.texty}  >ሂ</Text>
+  </TouchableOpacity>
+   <TouchableOpacity    style={styles.buttonA} >
+  <Text style={styles.texty}  >ሃ</Text>
+  </TouchableOpacity>
+  <TouchableOpacity    style={styles.buttonB}  >
+  <Text style={styles.texty}>ሄ</Text>
+  </TouchableOpacity>
+   <TouchableOpacity  style={styles.buttonA} 
+    >
+  <Text style={styles.texty}>ህ</Text>
+  </TouchableOpacity>
+  <TouchableOpacity    style={styles.buttonB}  >
+  <Text style={styles.texty}>ሆ</Text>
+  </TouchableOpacity>
+    </View>
+    <View style={{flexDirection:'row'}}>
+  <TouchableOpacity  style={styles.buttonA} 
+    onPress={playSoundB}>
+  <Text style={styles.texty}>ለ</Text>
+  </TouchableOpacity>
+  <TouchableOpacity    style={styles.buttonB}  >
+  <Text style={styles.texty}>ሉ</Text>
+  </TouchableOpacity>
+  <TouchableOpacity    style={styles.buttonC} >
+  <Text style={styles.texty}  >ሊ</Text>
+  </TouchableOpacity>
+   <TouchableOpacity    style={styles.buttonA} >
+  <Text style={styles.texty}  >ላ</Text>
+  </TouchableOpacity>
+  <TouchableOpacity    style={styles.buttonB}  >
+  <Text style={styles.texty}>ሌ</Text>
+  </TouchableOpacity>
+   <TouchableOpacity  style={styles.buttonA} 
+    >
+  <Text style={styles.texty}>ል</Text>
+  </TouchableOpacity>
+  <TouchableOpacity    style={styles.buttonB}  >
+  <Text style={styles.texty}>ሎ</Text>
+  </TouchableOpacity>
+    </View>
+    <View style={{flexDirection:'row'}} >
+  <TouchableOpacity  style={styles.buttonA} 
+   onPress={playSoundC} >
+  <Text style={styles.texty}>ሓ</Text>
+  </TouchableOpacity>
+  <TouchableOpacity    style={styles.buttonB}  >
+  <Text style={styles.texty}>ሑ</Text>
+  </TouchableOpacity>
+  <TouchableOpacity    style={styles.buttonC} >
+  <Text style={styles.texty}  >ሒ</Text>
+  </TouchableOpacity>
+   <TouchableOpacity    style={styles.buttonA} >
+  <Text style={styles.texty}  >ሓ</Text>
+  </TouchableOpacity>
+  <TouchableOpacity    style={styles.buttonB}  >
+  <Text style={styles.texty}>ሔ</Text>
+  </TouchableOpacity>
+   <TouchableOpacity  style={styles.buttonA} 
+    >
+  <Text style={styles.texty}>ሕ</Text>
+  </TouchableOpacity>
+  <TouchableOpacity    style={styles.buttonB}  >
+  <Text style={styles.texty}>ሖ</Text>
+  </TouchableOpacity>
+    </View>
+    <View style={{flexDirection:'row'}}>
+  <TouchableOpacity  style={styles.buttonA} 
+    onPress={playSoundD}>
+  <Text style={styles.texty}>መ</Text>
+  </TouchableOpacity>
+  <TouchableOpacity    style={styles.buttonB}  >
+  <Text style={styles.texty}>ሙ</Text>
+  </TouchableOpacity>
+  <TouchableOpacity    style={styles.buttonC} >
+  <Text style={styles.texty}  >ሚ</Text>
+  </TouchableOpacity>
+   <TouchableOpacity    style={styles.buttonA} >
+  <Text style={styles.texty}  >ማ</Text>
+  </TouchableOpacity>
+  <TouchableOpacity    style={styles.buttonB}  >
+  <Text style={styles.texty}>ሜ</Text>
+  </TouchableOpacity>
+   <TouchableOpacity  style={styles.buttonA} 
+    >
+  <Text style={styles.texty}>ም</Text>
+  </TouchableOpacity>
+  <TouchableOpacity    style={styles.buttonB}  >
+  <Text style={styles.texty}>ሞ</Text>
+  </TouchableOpacity>
+    </View>
+    <View style={{flexDirection:'row'}}>
+ <TouchableOpacity  style={styles.buttonA} 
+    >
+  <Text style={styles.texty}>ሠ</Text>
+  </TouchableOpacity>
+  <TouchableOpacity    style={styles.buttonB}  >
+  <Text style={styles.texty}>ሡ</Text>
+  </TouchableOpacity>
+  <TouchableOpacity    style={styles.buttonC} >
+  <Text style={styles.texty}  >ሢ</Text>
+  </TouchableOpacity>
+   <TouchableOpacity    style={styles.buttonA} >
+  <Text style={styles.texty}  >ሣ</Text>
+  </TouchableOpacity>
+  <TouchableOpacity    style={styles.buttonB}  >
+  <Text style={styles.texty}>ሤ</Text>
+  </TouchableOpacity>
+   <TouchableOpacity  style={styles.buttonA} 
+    >
+  <Text style={styles.texty}>ሥ</Text>
+  </TouchableOpacity>
+  <TouchableOpacity    style={styles.buttonB}  >
+  <Text style={styles.texty}>ሦ</Text>
+  </TouchableOpacity>
+    </View>
+    <View style={{flexDirection:'row'}}>
+  <TouchableOpacity  style={styles.buttonA} 
+    >
+  <Text style={styles.texty}>ረ</Text>
+  </TouchableOpacity>
+  <TouchableOpacity    style={styles.buttonB}  >
+  <Text style={styles.texty}>ሩ</Text>
+  </TouchableOpacity>
+  <TouchableOpacity    style={styles.buttonC} >
+  <Text style={styles.texty}  >ሪ</Text>
+  </TouchableOpacity>
+   <TouchableOpacity    style={styles.buttonA} >
+  <Text style={styles.texty}  >ራ</Text>
+  </TouchableOpacity>
+  <TouchableOpacity    style={styles.buttonB}  >
+  <Text style={styles.texty}>ሬ</Text>
+  </TouchableOpacity>
+   <TouchableOpacity  style={styles.buttonA} 
+    >
+  <Text style={styles.texty}>ር</Text>
+  </TouchableOpacity>
+  <TouchableOpacity    style={styles.buttonB}  >
+  <Text style={styles.texty}>ሮ</Text>
+  </TouchableOpacity>
+    </View>
+    <View style={{flexDirection:'row'}}>
+  <TouchableOpacity  style={styles.buttonA} 
+    >
+  <Text style={styles.texty}>ሰ</Text>
+  </TouchableOpacity>
+  <TouchableOpacity    style={styles.buttonB}  >
+  <Text style={styles.texty}>ሱ</Text>
+  </TouchableOpacity>
+  <TouchableOpacity    style={styles.buttonC} >
+  <Text style={styles.texty}  >ሲ</Text>
+  </TouchableOpacity>
+   <TouchableOpacity    style={styles.buttonA} >
+  <Text style={styles.texty}  >ሳ</Text>
+  </TouchableOpacity>
+  <TouchableOpacity    style={styles.buttonB}  >
+  <Text style={styles.texty}>ሴ</Text>
+  </TouchableOpacity>
+   <TouchableOpacity  style={styles.buttonA} 
+    >
+  <Text style={styles.texty}>ስ</Text>
+  </TouchableOpacity>
+  <TouchableOpacity    style={styles.buttonB}  >
+  <Text style={styles.texty}>ሶ</Text>
+  </TouchableOpacity>
+    </View>
+    <View style={{flexDirection:'row'}}>
+  <TouchableOpacity  style={styles.buttonA} 
+    >
+  <Text style={styles.texty}>ሸ</Text>
+  </TouchableOpacity>
+  <TouchableOpacity    style={styles.buttonB}  >
+  <Text style={styles.texty}>ሹ</Text>
+  </TouchableOpacity>
+  <TouchableOpacity    style={styles.buttonC} >
+  <Text style={styles.texty}  >ሺ</Text>
+  </TouchableOpacity>
+   <TouchableOpacity    style={styles.buttonA} >
+  <Text style={styles.texty}  >ሻ</Text>
+  </TouchableOpacity>
+  <TouchableOpacity    style={styles.buttonB}  >
+  <Text style={styles.texty}>ሼ</Text>
+  </TouchableOpacity>
+   <TouchableOpacity  style={styles.buttonA} 
+    >
+  <Text style={styles.texty}>ሽ</Text>
+  </TouchableOpacity>
+  <TouchableOpacity    style={styles.buttonB}  >
+  <Text style={styles.texty}>ሾ</Text>
+  </TouchableOpacity>
+    </View>
+    <View style={{flexDirection:'row'}}>
+ <TouchableOpacity  style={styles.buttonA} 
+    >
+  <Text style={styles.texty}>ቀ</Text>
+  </TouchableOpacity>
+  <TouchableOpacity    style={styles.buttonB}  >
+  <Text style={styles.texty}>ቁ</Text>
+  </TouchableOpacity>
+  <TouchableOpacity    style={styles.buttonC} >
+  <Text style={styles.texty}  >ቂ</Text>
+  </TouchableOpacity>
+   <TouchableOpacity    style={styles.buttonA} >
+  <Text style={styles.texty}  >ቃ</Text>
+  </TouchableOpacity>
+  <TouchableOpacity    style={styles.buttonB}  >
+  <Text style={styles.texty}>ቄ</Text>
+  </TouchableOpacity>
+   <TouchableOpacity  style={styles.buttonA} 
+    >
+  <Text style={styles.texty}>ቅ</Text>
+  </TouchableOpacity>
+  <TouchableOpacity    style={styles.buttonB}  >
+  <Text style={styles.texty}>ቆ</Text>
+  </TouchableOpacity>
+  </View>
+ </View>
+ 
+ <View style={{flexDirection: 'row'}}>
+     <TouchableOpacity   style={styles.button}
+     onPress={()=>navigation.navigate('Alphabets')}>
+  <Text style={styles.texty}>ወደ ሗላ</Text>
+  </TouchableOpacity>
+   <TouchableOpacity   style={styles.button}
+   onPress={()=>navigation.navigate('Words')}>
+  <Text style={styles.texty}>ቀጣይ ገፅ</Text>
+  </TouchableOpacity>
+    </View>
+ </ImageBackground>
+    </View>
+  );
+}
+
+
+// function prevnext({navigation})
+// {
+//   return(
+//     <View style={{flexDirection: 'row'}}>
+//      <TouchableOpacity   style={styles.button}
+//      onPress={()=>navigation.navigate('Home')}>
+//   <Text style={styles.texty}>Prev</Text>
+//   </TouchableOpacity>
+//    <TouchableOpacity   style={styles.button}
+//    onPress={()=>navigation.navigate('Words')}>
+//   <Text style={styles.texty}>Next</Text>
+//   </TouchableOpacity>
+//     </View>
+//   )
+// }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    paddingHorizontal: 10,
+
+  },
+  texty: {
+    color: "white",
+    fontWeight: "900",
+    fontSize: 20,
+ },
+ button: {
+    alignItems: "center",
+    backgroundColor: "#ffa500",
+    padding:10,
+    marginBottom: 30,
+    left:0,
+    right:10,
+    width:150,
+    top:10,
+    margin:3,
+     elevation: 60,
+  alignItems: 'center',
+  },
+  buttonA: {
+    alignItems: "center",
+    backgroundColor: "green",
+    padding:10,
+    marginBottom: 30,
+    left:0,
+    right:10,
+    width:40,
+    top:10,
+    margin:3,
+     elevation: 60,
+  borderRadius: 80,
+  },
+   buttonB: {
+    alignItems: "center",
+    backgroundColor: "#ff00ff",
+    padding:10,
+    marginBottom: 30,
+    left:0,
+    right:10,
+    width:35,
+    top:10,
+    margin:3,
+     elevation: 60,
+  borderRadius: 80,
+  },
+   buttonC: {
+    alignItems: "center",
+    backgroundColor: "#000080",
+    padding:10,
+    marginBottom: 30,
+    left:0,
+    right:10,
+    width:35,
+    top:10,
+    margin:3,
+     elevation: 60,
+  borderRadius: 80,
+  },
+   buttonD: {
+    alignItems: "center",
+    backgroundColor: "#ffff00",
+    padding:10,
+    marginBottom: 30,
+    left:0,
+    right:10,
+    width:35,
+    top:10,
+    margin:3,
+     elevation: 60,
+  borderRadius: 80,
+  },
+   buttonE: {
+    alignItems: "center",
+    backgroundColor: "#ff0000",
+    padding:10,
+    marginBottom: 30,
+    left:0,
+    right:10,
+    width:35,
+    top:10,
+    margin:3,
+     elevation: 60,
+  borderRadius: 80,
+  },
+   buttonF: {
+    alignItems: "center",
+    backgroundColor: "#ffff00",
+    padding:10,
+    marginBottom: 30,
+    left:0,
+    right:10,
+    width:35,
+    top:10,
+    margin:3,
+     elevation: 60,
+  borderRadius: 80,
+  },
+   buttonG: {
+    alignItems: "center",
+    backgroundColor: "#000080",
+    padding:10,
+    marginBottom: 30,
+    left:0,
+    right:10,
+    width:40,
+    top:10,
+    margin:3,
+     elevation: 60,
+  borderRadius: 80,
+  },
+  buttonH: {
+    alignItems: "center",
+    backgroundColor: "#ff00ff",
+    padding:10,
+    marginBottom: 30,
+    left:0,
+    right:10,
+    width:40,
+    top:10,
+    margin:3,
+     elevation: 60,
+  borderRadius: 80,
+  },
+  buttonI: {
+    alignItems: "center",
+    backgroundColor: "green",
+    padding:10,
+    marginBottom: 30,
+    left:0,
+    right:10,
+    width:40,
+    top:10,
+    margin:3,
+     elevation: 60,
+  borderRadius: 80,
+  },
+  buttonJ: {
+    alignItems: "center",
+    backgroundColor: "#ffff00",
+    padding:10,
+    marginBottom: 30,
+    left:0,
+    right:10,
+    width:40,
+    top:10,
+    margin:3,
+     elevation: 60,
+  borderRadius: 80,
+  },
+  buttonK: {
+    alignItems: "center",
+    backgroundColor: "green",
+    padding:10,
+    marginBottom: 30,
+    left:0,
+    right:10,
+    width:40,
+    top:10,
+    margin:3,
+     elevation: 60,
+  borderRadius: 80,
+  },
+  buttonL: {
+    alignItems: "center",
+    backgroundColor: "#ffff00",
+    padding:10,
+    marginBottom: 30,
+    left:0,
+    right:10,
+    width:40,
+    top:10,
+    margin:3,
+     elevation: 60,
+  borderRadius: 80,
+  },
+  buttonM: {
+    alignItems: "center",
+    backgroundColor: "green",
+    padding:10,
+    marginBottom: 30,
+    left:0,
+    right:10,
+    width:40,
+    top:10,
+    margin:3,
+     elevation: 60,
+  borderRadius: 80,
+  },
+  buttonN: {
+    alignItems: "center",
+    backgroundColor: "#ff00ff",
+    padding:10,
+    marginBottom: 30,
+    left:0,
+    right:10,
+    width:40,
+    top:10,
+    margin:3,
+     elevation: 60,
+  borderRadius: 80,
+  },
+  buttonO: {
+    alignItems: "center",
+    backgroundColor: "#000080",
+    padding:10,
+    marginBottom: 30,
+    left:0,
+    right:10,
+    width:40,
+    top:10,
+    margin:3,
+     elevation: 60,
+  borderRadius: 80,
+  },
+  buttonP: {
+    alignItems: "center",
+    backgroundColor: "#ffff00",
+    padding:10,
+    marginBottom: 30,
+    left:0,
+    right:10,
+    width:40,
+    top:10,
+    margin:3,
+     elevation: 60,
+  borderRadius: 80,
+  },
+  buttonQ: {
+    alignItems: "center",
+    backgroundColor: "green",
+    padding:10,
+    marginBottom: 30,
+    left:0,
+    right:10,
+    width:40,
+    top:10,
+    margin:3,
+     elevation: 60,
+  borderRadius: 80,
+  },
+  buttonR: {
+    alignItems: "center",
+    backgroundColor: "#ffff00",
+    padding:10,
+    marginBottom: 30,
+    left:0,
+    right:10,
+    width:40,
+    top:10,
+    margin:3,
+     elevation: 60,
+  borderRadius: 80,
+  },
+  buttonS: {
+    alignItems: "center",
+    backgroundColor: "green",
+    padding:10,
+    marginBottom: 30,
+    left:0,
+    right:10,
+    width:40,
+    top:10,
+    margin:3,
+     elevation: 60,
+  borderRadius: 80,
+  },
+  buttonT: {
+    alignItems: "center",
+    backgroundColor: "#ff00ff",
+    padding:10,
+    marginBottom: 30,
+    left:0,
+    right:10,
+    width:40,
+    top:10,
+    margin:3,
+     elevation: 60,
+  borderRadius: 80,
+  },
+  buttonY: {
+    alignItems: "center",
+    backgroundColor: "green",
+    padding:10,
+    marginBottom: 30,
+    left:0,
+    right:10,
+    width:40,
+    top:10,
+    margin:3,
+     elevation: 60,
+  borderRadius: 80,
+  },
+  buttonX: {
+    alignItems: "center",
+    backgroundColor: "#ff0000",
+    padding:10,
+    marginBottom: 30,
+    left:0,
+    right:10,
+    width:40,
+    top:10,
+    margin:3,
+     elevation: 60,
+  borderRadius: 80,
+  },
+  buttonU: {
+    alignItems: "center",
+    backgroundColor: "#000080",
+    padding:10,
+    marginBottom: 30,
+    left:0,
+    right:10,
+    width:40,
+    top:10,
+    margin:3,
+     elevation: 60,
+  borderRadius: 80,
+  },
+  buttonV: {
+    alignItems: "center",
+    backgroundColor: "#ff0000",
+    padding:10,
+    marginBottom: 30,
+    left:0,
+    right:10,
+    width:40,
+    top:10,
+    margin:3,
+     elevation: 60,
+  borderRadius: 80,
+  },
+  buttonW: {
+    alignItems: "center",
+    backgroundColor: "green",
+    padding:10,
+    marginBottom: 30,
+    left:0,
+    right:10,
+    width:40,
+    top:10,
+    margin:3,
+     elevation: 60,
+  borderRadius: 80,
+  },
+  buttonZ: {
+    alignItems: "center",
+    backgroundColor: "#ff00ff",
+    padding:10,
+    marginBottom: 30,
+    left:0,
+    right:10,
+    width:40,
+    top:10,
+    margin:3,
+     elevation: 60,
+  borderRadius: 80,
+  }
+});
