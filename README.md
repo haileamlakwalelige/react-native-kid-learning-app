@@ -15,7 +15,7 @@ To install the app, follow these steps:
 1. Clone the repository to your local machine
 2. Install Node.js and React Native on your machine (if not already installed)
 3. Run npm install to install the app's dependencies
-4. Run react-native run-android (for Android) or react-native run-ios (for iOS) to start the app
+4. To start the app use expo commands.
 
 
 ## Usage
