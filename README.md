@@ -38,3 +38,4 @@ This app is licensed under the MIT License. See the LICENSE file for more inform
 ## NB: 
 
 Please note that this app was developed using the Snack Expo platform, which may cause some compatibility issues or mismatches.
+And I made this two years ago.
